@@ -1,0 +1,85 @@
+{
+    "common": {
+        "name": "test-adapter",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "uk": "Початкова версія",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "Test",
+        "titleLang": {
+            "en": "Test",
+            "de": "Prüfen",
+            "ru": "Тест",
+            "pt": "Teste",
+            "nl": "Test",
+            "fr": "Test",
+            "it": "Test",
+            "es": "Prueba",
+            "pl": "Test",
+            "uk": "Тест",
+            "zh-cn": "测试"
+        },
+        "desc": {
+            "en": "Test Adapter for development",
+            "de": "Testadapter für die Entwicklung",
+            "ru": "Тестовый адаптер для разработки",
+            "pt": "Adaptador de teste para desenvolvimento",
+            "nl": "Testadapter voor ontwikkeling",
+            "fr": "Adaptateur de test pour le développement",
+            "it": "Adattatore di prova per lo sviluppo",
+            "es": "Adaptador de prueba para desarrollo",
+            "pl": "Adapter testowy do programowania",
+            "uk": "Тестовий адаптер для розробки",
+            "zh-cn": "用于开发的测试适配器"
+        },
+        "authors": ["marc <marc@marc.de>"],
+        "keywords": ["ioBroker", "template", "Smart Home", "home automation"],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "build/main.js",
+        "icon": "test-adapter.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/marc/ioBroker.test-adapter/main/admin/test-adapter.png",
+        "readme": "https://github.com/marc/ioBroker.test-adapter/blob/main/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "logic",
+        "compact": true,
+        "connectionType": "cloud",
+        "dataSource": "poll",
+        "adminUI": {
+            "config": "materialize"
+        },
+        "dependencies": [
+            {
+                "js-controller": ">=3.3.22"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=5.0.0"
+            }
+        ]
+    },
+    "native": {
+        "option1": true,
+        "option2": "42",
+        "password": ""
+    },
+    "protectedNative": ["password"],
+    "encryptedNative": ["password"],
+    "objects": [],
+    "instanceObjects": []
+}
